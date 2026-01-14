@@ -28,7 +28,8 @@ Output format:
 - Start with YAML frontmatter: marp: true, theme: default, paginate: true
 - Separate slides with ---
 - Use markdown formatting
-- Only output the markdown, no explanations
+- Only output the raw markdown, no explanations
+- Do NOT wrap output in code blocks (no \`\`\`markdown or \`\`\`)
 
 Example structure:
 ---

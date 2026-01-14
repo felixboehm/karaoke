@@ -1,4 +1,3 @@
-```markdown
 ---
 marp: true
 theme: default
@@ -6,7 +5,7 @@ paginate: true
 ---
 
 # PowerPoint-Karaoke
-## Die Kunst des spontanen Unsinns
+## Die Kunst der spontanen Präsentation
 
 ![bg right](https://picsum.photos/800/600?random=1)
 
@@ -14,57 +13,53 @@ paginate: true
 
 # Was ist PowerPoint-Karaoke?
 
-- Ein Sport für Menschen mit zu viel Selbstvertrauen
-- Präsentieren Sie Folien, die Sie noch nie gesehen haben
-- Tun Sie so, als wüssten Sie, wovon Sie reden
-- Genau wie im echten Berufsleben, nur lustiger
+- Ursprünglich von Ninja-Mönchen in Tibet erfunden (1847)
+- Wurde später von der NASA zur Astronautenausbildung genutzt
+- Wissenschaftlich bewiesene Methode zur Steigerung der Gehirnaktivität um 340%
 
 ![bg left](https://picsum.photos/800/600?random=2)
 
 ---
 
-# Die Geschichte der Disziplin
+# Die 5 goldenen Regeln
 
-> "Ich habe keine Ahnung, was auf der nächsten Folie kommt, aber ich bin mir sicher, es wird relevant sein."
-> 
-> — Jeder PowerPoint-Karaoke-Teilnehmer, jemals
-
-Erfunden 2006 in Berlin von Menschen, die zu viele langweilige Meetings überlebt hatten.
+1. **Niemals** die Folien vorher ansehen
+2. Jeder Satz muss mit "Interessanterweise..." beginnen
+3. Mindestens einmal pro Folie dramatisch Pause machen
+4. Bei Unsicherheit: Tortendiagramm erfinden
+5. Im Zweifel liegt die Antwort bei "Quantenphysik"
 
 ---
 
 ![bg right](https://picsum.photos/800/600?random=3)
 
-# Die goldenen Regeln
+# Statistiken, die Sie überraschen werden
 
-1. **Niemals zugeben**, dass Sie verwirrt sind
-2. **Jede Grafik** hat eine tiefe Bedeutung
-3. **Füllwörter** sind Ihr bester Freund
-4. Im Zweifel: **"Wie Sie hier klar sehen können..."**
+| Kategorie | Prozent |
+|-----------|---------|
+| Präsentatoren, die schwitzen | 97% |
+| Zuhörer, die tatsächlich aufpassen | 4% |
+| Folien mit unnötigen Animationen | 112% |
 
 ---
 
-# Wissenschaftlich bewiesene Vorteile
+# Berühmte Zitate
 
-| Vorteil | Steigerung |
-|---------|------------|
-| Improvisationstalent | +847% |
-| Schamlosigkeit | +∞ |
-| Karrierechancen im Management | +312% |
-| Fähigkeit, Unsinn zu verkaufen | Unbezahlbar |
+> "Ich verstehe diese Folie auch nicht, aber ich bin mir sicher, sie ist wichtig."
+> 
+> — *Jeder PowerPoint-Karaoke Teilnehmer*
 
 ![bg left](https://picsum.photos/800/600?random=4)
 
 ---
 
-# Fazit
+# Zusammenfassung & Fazit
 
-PowerPoint-Karaoke bereitet Sie optimal auf das echte Leben vor:
+- PowerPoint-Karaoke rettet nachweislich 3 Ehen pro Jahr
+- Die WHO empfiehlt 15 Minuten täglich
+- Nächste Woche: Advanced Workshop "Kreisdiagramme aus dem Nichts erschaffen"
 
-**Niemand weiß, was er tut.**
-**Alle tun so, als ob.**
+**Vielen Dank für Ihre Aufmerksamkeit!**
+*Fragen werden ignoriert.*
 
 ![bg right](https://picsum.photos/800/600?random=5)
-
-*Vielen Dank für Ihre Aufmerksamkeit!*
-```
