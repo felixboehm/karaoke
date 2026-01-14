@@ -1,0 +1,38 @@
+{
+  "name": "karaoke",
+  "version": "0.1.0",
+  "description": "PowerPoint Karaoke Generator - Generate random presentations from any topic",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "karaoke": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "test:e2e": "vitest run tests/e2e",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "powerpoint",
+    "karaoke",
+    "presentation",
+    "marp",
+    "llm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@marp-team/marp-cli": "^3.4.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
