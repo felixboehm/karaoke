@@ -22,6 +22,7 @@ Requirements:
 - Use absurd, surprising, and humorous content (this is for PowerPoint Karaoke)
 - Include random placeholder images from picsum.photos (e.g., https://picsum.photos/800/600?random=N)
 - Use varied slide layouts (title slides, bullet points, images, quotes)
+- IMPORTANT: Never place text over full background images. Always use "bg left" or "bg right" to keep text on white background for readability
 
 Output format:
 - Start with YAML frontmatter: marp: true, theme: default, paginate: true
