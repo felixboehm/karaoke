@@ -112,6 +112,75 @@ Der Prompt sollte:
 7. Weitere Provider hinzufügen (optional)
 8. Tests schreiben
 
+## Testing
+
+### Test-Framework
+
+| Tool | Zweck |
+|------|-------|
+| **Vitest** | Unit & Integration Tests |
+| **Mock Service Worker** | LLM API Mocking (optional) |
+
+### Test-Struktur
+
+```
+tests/
+├── unit/
+│   ├── config.test.ts        # Config-Parsing & Defaults
+│   ├── generator.test.ts     # Prompt-Generierung
+│   └── providers/
+│       ├── claude-cli.test.ts
+│       └── anthropic.test.ts
+├── integration/
+│   └── pipeline.test.ts      # Topic → Markdown → PDF
+├── e2e/
+│   └── cli.test.ts           # Vollständiger CLI-Durchlauf
+└── fixtures/
+    └── sample-output.md      # Erwartete Marp-Outputs
+```
+
+### Test-Strategien
+
+**Unit Tests**
+- Config-Parsing: Validierung aller CLI-Argumente und Defaults
+- Prompt-Builder: Korrekte Interpolation von Topic, Slides, Language
+- Provider-Interface: Jeder Provider gibt valides Markdown zurück
+
+**Integration Tests**
+- Mock-Provider: Fester LLM-Output für deterministische Tests
+- Marp-Validierung: Generiertes Markdown ist valides Marp-Format
+- PDF-Generierung: Marp CLI erzeugt fehlerfreie PDF
+
+**E2E Tests**
+- CLI-Aufruf mit echtem Provider (optional, in CI deaktiviert)
+- Smoke-Test: `npx karaoke "Test" --provider mock`
+
+### Mocking-Strategie
+
+```typescript
+// Mock-Provider für deterministische Tests
+export const mockProvider: Provider = {
+  name: 'mock',
+  generate: async (prompt: string) => {
+    return readFileSync('tests/fixtures/sample-output.md', 'utf-8');
+  }
+};
+```
+
+LLM-Responses werden gemockt, um:
+- Deterministische Tests zu ermöglichen
+- API-Kosten in CI zu vermeiden
+- Schnelle Test-Durchläufe zu garantieren
+
+### CI/CD
+
+```yaml
+# GitHub Actions
+- npm run test:unit      # Immer
+- npm run test:integration # Immer
+- npm run test:e2e       # Nur mit mock-provider
+```
+
 ## Dependencies
 
 ```json
@@ -122,7 +191,8 @@ Der Prompt sollte:
   },
   "devDependencies": {
     "@types/node": "^20.x",
-    "typescript": "^5.x"
+    "typescript": "^5.x",
+    "vitest": "^2.x"
   }
 }
 ```
